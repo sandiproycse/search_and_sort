@@ -22,7 +22,7 @@ void bubble_sort(int arr[],int size)
 {
     for(int i = 0;i < size; i ++){
         for(int j = 0; j < (size - (i + 1)); j++){
-            cout << j << " " << (j + 1) << endl;
+            //cout << j << " " << (j + 1) << endl;
 
             if(arr[j] > arr[j+1]){
                 int temp = arr[j];
