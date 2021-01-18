@@ -20,9 +20,9 @@ int main()
 }
 void bubble_sort(int arr[],int size)
 {
-    for(int i = 0;i < size; i ++){
-        for(int j = 0; j < (size - (i + 1)); j++){
-            //cout << j << " " << (j + 1) << endl;
+    for(int i = 0;i < size - 1; i ++){
+        for(int j = 0; j < (size - (i+1)); j++){
+            //cout << "arr["<< j << "] > arr[" << (j + 1) << "] " << arr[j] << " > " << arr[j+1] << endl;
 
             if(arr[j] > arr[j+1]){
                 int temp = arr[j];
@@ -30,7 +30,8 @@ void bubble_sort(int arr[],int size)
                 arr[j+1] = temp;
             }
         }
-        cout << endl;
+        //for(int k = 0;k < size; k++) cout << arr[k] << " " ;
+        //cout << endl << endl;
     }
     display(arr,size);
 }
